@@ -1,0 +1,19 @@
+[1mdiff --git a/.travis.yml b/.travis.yml[m
+[1mindex 47c163c..83737e0 100644[m
+[1m--- a/.travis.yml[m
+[1m+++ b/.travis.yml[m
+[36m@@ -1,4 +1,12 @@[m
+ language: node_js[m
+ node_js: node[m
+ services:[m
+[31m-- mongodb[m
+\ No newline at end of file[m
+[32m+[m[32m- mongodb[m
+[32m+[m[32mdeploy:[m
+[32m+[m[32m  provider: heroku[m
+[32m+[m[32m  api_key:[m
+[32m+[m[32m    secure: JI8tBkF6GkVrz1JtHO52FI5dKTkHI76yaqqZZJlEOD/fS5tNrzN4OwHhp6xXw3Lp2Zyd/Ul49bDYcYOanrDmImGH6nzNijOQ0E3lmdvVzGm7ZEBw478H2BAN6Vt38QKC5D+CW8HRaGfufgD/fYPfAb55SfMkHrpKm3Wz+TW5+KOtpYL6i10TSSVi9wnr4k4rshrk4CgLF3KM6onxvVYNwrSNXRT1936DyXdBSMkfxlg6XU6ANngyIkqX7JjRSgBz5jDOcDUfaAovwsxXAxaz1d5XaEdhpDmmdFd1IwcftAadItOnmduHfxIi5kT0VTSzxr3z9H/Oh0engM40t9Ury5byboO9HfZtfYDGvFard36Cu9lvF2fLHjpV5Kq9BGVzgSJezL2dScWrihkiT9acZmUQlLmErosBTkg9HCpQKw4uxQ5wQhH/E2QqzLcLM2/uveoao7+6HbtWPOhr5w0SRD+eyCLnXLUOP+e9nGbv3SlMDF1TgdVzILt0bAs454wxqN1LLkqBeZhr3sGF0+Vk721/RFRLrq/OfKfOQhJx1GIMvxkyO86UG2/wl9x/ymvz7MkczmoUp1hDTEmOxi6MIyJEKStgJIwBwn5CjhONSzb/Hb+7blbF0X/P5BYTE2L8JFdz46sWyZDQLB0HCkbvBO6Lq3G7KWCtG+aSYWmk0mk=[m
+[32m+[m[32m  app: test-restaurants-ci[m
+[32m+[m[32m  on:[m
+[32m+[m[32m    repo: Btan579/test-restaurants-ci[m
+[32m+[m[32m    branch: feature/with-tests[m
