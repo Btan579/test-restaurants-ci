@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: JI8tBkF6GkVrz1JtHO52FI5dKTkHI76yaqqZZJlEOD/fS5tNrzN4OwHhp6xXw3Lp2Zyd/Ul49bDYcYOanrDmImGH6nzNijOQ0E3lmdvVzGm7ZEBw478H2BAN6Vt38QKC5D+CW8HRaGfufgD/fYPfAb55SfMkHrpKm3Wz+TW5+KOtpYL6i10TSSVi9wnr4k4rshrk4CgLF3KM6onxvVYNwrSNXRT1936DyXdBSMkfxlg6XU6ANngyIkqX7JjRSgBz5jDOcDUfaAovwsxXAxaz1d5XaEdhpDmmdFd1IwcftAadItOnmduHfxIi5kT0VTSzxr3z9H/Oh0engM40t9Ury5byboO9HfZtfYDGvFard36Cu9lvF2fLHjpV5Kq9BGVzgSJezL2dScWrihkiT9acZmUQlLmErosBTkg9HCpQKw4uxQ5wQhH/E2QqzLcLM2/uveoao7+6HbtWPOhr5w0SRD+eyCLnXLUOP+e9nGbv3SlMDF1TgdVzILt0bAs454wxqN1LLkqBeZhr3sGF0+Vk721/RFRLrq/OfKfOQhJx1GIMvxkyO86UG2/wl9x/ymvz7MkczmoUp1hDTEmOxi6MIyJEKStgJIwBwn5CjhONSzb/Hb+7blbF0X/P5BYTE2L8JFdz46sWyZDQLB0HCkbvBO6Lq3G7KWCtG+aSYWmk0mk=
+  app: test-restaurants-ci
+  on:
+    repo: Btan579/test-restaurants-ci
+    branch: feature/with-tests
